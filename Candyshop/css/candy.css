@@ -36,10 +36,16 @@ body {
   min-height: 100vh;
 }
 
+
+
+
+
+
+
 .headerblock {
   width: 100%;
   height: 150px;
-  
+
   /* background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; */
@@ -223,7 +229,7 @@ body {
   background-color: rgb(255, 255, 255);
   /* color: #29abe2; */
   border: none;
-  margin-left: 8px;
+  /* margin-left: 8px; */
   text-decoration: none;
 
   /* background-color: #000000; */
@@ -247,6 +253,9 @@ body {
 
 
 
+
+
+
 .header2 {
   width: 100%;
   height: 400px;
@@ -256,27 +265,40 @@ body {
   background-position: center center;
   background-size: cover;
   opacity: 1;
-  position: absolute;
+  
+  /* position: absolute;
   top: 150px;
-  left: 0px;
+  left: 0px; */
+  
   overflow: hidden;
+
 }
 
 .candyAdvertising {
-  width: 1000px;
+  max-width: 1000px;
   height: 240px;
-  position: absolute;
+
+  margin: 80px auto;
+
+  display: grid;
+  align-items: center;
+  gap: 50px;
+  
+  /* position: absolute;
   left: 220px;
-  top: 80px;
+  top: 80px; */
 
   /* background-color: #000000; */
 }
 
 .candyAdvert1 {
-  width: 599px;
-  height: 100px;
-  position: absolute;
-  top: 0px;
+  /* width: 599px;
+  height: 100px; */
+  
+  /* position: absolute;
+  top: 0px; */
+  
+
   display: flex;
   align-items: center;
 
@@ -285,7 +307,9 @@ body {
 }
 
 .h1-candyAdvert1 {
-  position: relative;
+  
+  /* position: relative; */
+  
   font-family: 'Nunito';
   font-weight: 700;
   font-size: 50px;
@@ -298,10 +322,12 @@ body {
 }
 
 .candyAdvert2 {
-  top: 150px;
-  width: 1000px;
-  height: 90px;
-  position: absolute;
+  /* position: absolute;
+  top: 150px; */
+  
+  /* width: 1000px;
+  height: 90px; */
+  
   display: flex;
   align-items: center;
 }
@@ -315,26 +341,59 @@ body {
   color: #FFFFFF;
 }
 
+
+
+
+
+
+
+
 .shopping-area {
   width: 100%;
   height: 1510px;
-  position: absolute;
-  top: 550px;
+  
+  /* position: absolute;
+  top: 550px; */
+  display: grid;
+  justify-content: center;
+  gap: 0px;
 
-  /* background-color: #b68282; */
+
+  
+  background-color: #ee8080;
 }
 
 .bestseller-title-block {
-  width: 191px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
+  width: 1000px;
+  height: 30px;
+  /* color: rgba(0, 0, 0, 1); */
+  
+  margin-top: 80px;
+  /* position: absolute;
   top: 80px;
-  left: 220px;
-  font-family: Nunito;
+  left: 220px; */
+
+
+  background-color: #37aa96;
+}
+
+.p-bestseller-title-block {
+  font-family: 'Nunito';
   font-weight: Bold;
   font-size: 30px;
-  opacity: 1;
-  text-align: left;
+
+  line-height: 30px;
+  /* opacity: 1; */
+  /* text-align: left; */
+
+  /* background-color: aqua; */
+}
+
+.bestsellers {
+  width: 1000px;
+  height: 1270px;
+
+  background-color: #000000;
 }
 
 
