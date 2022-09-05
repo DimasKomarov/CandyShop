@@ -30,49 +30,53 @@ body {
 .candyshop {
   width: 100%;
   height: 2240px;
-  background: #FFFFFF;
-  opacity: 1;
   position: relative;
-  top: 0px;
-  left: 0px;
   overflow: hidden;
-  min-height: 100vh;
-  position: relative;
   z-index: 1;
+  min-height: 100vh;
 }
 
 .headerblock {
   width: 100%;
   height: 150px;
-  background-repeat: no-repeat;
+  
+  /* background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  opacity: 1;
+  background-size: cover; */
+  /* opacity: 1; */
+  
   overflow: hidden;
+
+  /* background-color: aqua; */
 }
 
 .header {
-  position: absolute;
-  width: 1000px;
+  position: relative;
+  max-width: 1000px;
   height: 50px;
-  left: 220px;
-  top: 50px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  /* background-repeat: no-repeat;
+  background-position: center center; */
+  /* background-size: cover; */
+  /* opacity: 1; */
+  
   overflow: hidden;
 
   /* background-color: #bb9494; */
 }
 
 .logoblock {
-  position: relative;
-  width: 214px;
-  height: 50px;
-  left: 0px;
-  top: 0px;
+ 
+  /* width: 214px;
+  height: 50px; */
+  
   display: flex;
+  align-items: center;
+  gap: 15px;
 
   /* background-color: #ff0000; */
 }
@@ -80,27 +84,28 @@ body {
 .logo {
   width: 50px;
   height: 50px;
-  background: url("../images/logo.png");
-  background-repeat: no-repeat;
+  
+  /* background: url("../images/logo.png"); */
+  /* background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  background-size: cover; */
 
   /* background-color: #d31212; */
 }
 
 .shop {
-  width: 149px;
-  height: 50px;
+  
+  /* width: 149px;
+  height: 50px; */
+  
   color: #000000;
+  
+  /* margin-left: 15px;
   position: absolute;
   left: 65px;
-  top: 0px;
-  opacity: 1;
+  top: 0px; */
+  /* opacity: 1; */
+  
   display: flex;
   align-items: center;
 
@@ -115,16 +120,26 @@ body {
   text-align: center;
 }
 
+.catalogANDsearchblock {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+}
+
 .catalog {
-  position: absolute;
-  width: 77px;
-  height: 50px;
-  left: 643px;
-  top: 0px;
+  /* width: 77px;
+  height: 50px; */
+
+  gap: 15px;
   display: flex;
   align-items: center;
 
   /* background-color: rgb(255, 222, 179); */
+}
+
+.rectangle {
+  /* width: 12px;
+  height: 6px; */
 }
 
 .p-catalog {
@@ -141,36 +156,46 @@ body {
   width: 230px;
   height: 50px;
   opacity: 1;
-  position: absolute;
+  /* position: absolute;
   top: 0px;
-  left: 770px;
-  overflow: hidden;
+  left: 770px; */
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
 
   /* background-color: aqua; */
 }
 
 .search {
-  position: absolute;
+  /* position: relative; */
   width: 230px;
   height: 36px;
-  top: 7px;
-  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 137px;
+  
+  /* background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
-  overflow: hidden;
+  overflow: hidden; */
+  
+  
   /* shadow */
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .searchText {
-  position: absolute;
-  width: 47px;
-  height: 36px;
-  left: 15px;
+  /* position: absolute; */
+  /* width: 47px;
+  height: 36px; */
+  /* left: 15px; */
+  /* margin-left: 15px; */
   display: flex;
   align-items: center;
 
@@ -182,22 +207,45 @@ body {
   font-family: 'Nunito';
   font-weight: 600;
   font-size: 16px;
-  opacity: 1;
-  text-align: left;
+  /* opacity: 1; */
+  /* text-align: left; */
 
   /* background-color: #610202; */
 }
 
 .searchbutton {
-  position: absolute;
-  top: 10px;
-  left: 199px;
-  width: 16px;
-  height: 16px;
-  opacity: 1;
-  background: url("../images/search_button.png");
-  ;
+  /* position: absolute; */
+  /* top: 10px;
+  left: 199px; */
+  /* width: 16px;
+  height: 16px; */
+  /* margin-right: 15px; */
+  background-color: rgb(255, 255, 255);
+  /* color: #29abe2; */
+  border: none;
+  margin-left: 8px;
+  text-decoration: none;
+
+  /* background-color: #000000; */
 }
+
+.searchbutton:active {
+  border: none;
+  text-decoration: none;
+}
+
+.searchbutton:hover {
+  border: none;
+  text-decoration: none;
+}
+
+.searchbutton:focus {
+  border: none;
+  text-decoration: none;
+}
+
+
+
 
 .header2 {
   width: 100%;
