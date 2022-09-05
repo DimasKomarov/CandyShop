@@ -1,9 +1,30 @@
 * {
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #000000;
+  /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
+  font-style: normal;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background: #FFFFFF;
 }
 
 body {
-  font-size: 14px;
+  position: relative;
+  min-height: 100vh;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  overflow: hidden;
+  overflow-x: hidden !important;
+  overflow-y: scroll;
 }
 
 .candyshop {
@@ -15,6 +36,9 @@ body {
   top: 0px;
   left: 0px;
   overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 .headerblock {
