@@ -57,7 +57,7 @@ input, textarea, select {
 
 .headerblock {
   width: 100%;
-  height: 150px;
+  min-height: 150px;
 
   /* background-repeat: no-repeat;
   background-position: center center;
@@ -72,21 +72,65 @@ input, textarea, select {
 .header {
   position: relative;
   max-width: 1000px;
-  height: 50px;
-  margin: 50px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  min-height: 50px;
   
-  /* background-repeat: no-repeat;
-  background-position: center center; */
-  /* background-size: cover; */
-  /* opacity: 1; */
+  margin: 50px auto;
+  padding: 0px 40px;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
   
   overflow: hidden;
 
-  /* background-color: #bb9494; */
+  background-color: #bb9494;
 }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+  .header {
+    align-items: left;
+    gap: 30px;
+    flex-direction: column;
+    margin: 40px auto;
+  }
+
+  .catalogANDsearchblock {
+    align-items: left;
+    gap: 25px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    align-items: left;
+    gap: 30px;
+    flex-direction: column;
+    margin: 40px auto;
+    padding: 0px 25px;
+  }
+
+  .catalogANDsearchblock {
+    align-items: left;
+    gap: 25px;
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+
+
+
+
 
 .logoblock {
  
@@ -139,21 +183,23 @@ input, textarea, select {
   text-align: center;
 }
 
-.catalogANDsearchblock {
-  gap: 50px;
+.catalogANDsearchblock { 
+  max-width: 384px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: space-between;
+  gap: 50px;
+
+  background-color: #37aa96;
 }
 
 .catalog {
-  /* width: 77px;
-  height: 50px; */
-
   gap: 15px;
+  
   display: flex;
   align-items: center;
 
-  /* background-color: rgb(255, 222, 179); */
+  background-color: rgb(255, 222, 179);
 }
 
 .rectangle {
@@ -182,7 +228,7 @@ input, textarea, select {
   display: flex;
   align-items: center;
 
-  /* background-color: aqua; */
+  background-color: aqua;
 }
 
 .search {
@@ -280,7 +326,7 @@ input, textarea, select {
 
 .header2 {
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   background: linear-gradient(0deg, rgba(221, 3, 60, 0.75), rgba(221, 3, 60, 0.75)),
     url("../images/candy.png");
   background-repeat: no-repeat;
@@ -288,22 +334,20 @@ input, textarea, select {
   background-size: cover;
   opacity: 1;
   
-  /* position: absolute;
-  top: 150px;
-  left: 0px; */
-  
   overflow: hidden;
 
 }
 
 .candyAdvertising {
   max-width: 1000px;
-  height: 240px;
+  min-height: 240px;
 
   margin: 80px auto;
+  padding: 0px 40px;
 
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
   gap: 50px;
   
   /* position: absolute;
@@ -534,27 +578,17 @@ input, textarea, select {
 
 .footer {
   width: 100%;
-  height: 180px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 2060px;
-  left: 0px;
+  min-height: 180px;
   overflow: hidden;
 
   background-color: #DD033C;
 }
 
 .links-1 {
-  position: absolute;
-  width: 88px;
-  height: 80px;
-  left: 220px;
-  top: 50px;
+  max-width: 88px;
+  max-height: 80px;
   bottom: 50px;
-  display: block;
+  
 
   /* background-color: #000000; */
 }
@@ -571,13 +605,12 @@ input, textarea, select {
 }
 
 .links-2 {
-  position: absolute;
+
   width: 200px;
   height: 80px;
-  left: 343px;
-  top: 50px;
+
   bottom: 50px;
-  display: block;
+
 
   /* background-color: #000000; */
 }
@@ -585,7 +618,6 @@ input, textarea, select {
 .links-2 p {
   margin-top: 0px;
   color: #FFFFFF;
-  top: 0px;
   font-family: 'Nunito';
   font-weight: 400;
   font-size: 20px;
@@ -594,17 +626,13 @@ input, textarea, select {
 }
 
 .icons {
-  position: absolute;
   width: 115px;
   height: 40px;
-  left: 1105px;
-  top: 70px;
 
   /* background-color: #000000; */
 }
 
 .icon-1 {
-  position: absolute;
   width: 40px;
   height: 40px;
   opacity: 1;
@@ -612,8 +640,6 @@ input, textarea, select {
 }
 
 .icon-2 {
-  position: absolute;
-  left: 75px;
   width: 40px;
   height: 40px;
   opacity: 1;
