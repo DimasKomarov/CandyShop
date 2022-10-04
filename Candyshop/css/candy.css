@@ -294,9 +294,12 @@ input, textarea, select {
 }
 
 .bestseller-title-block {
+  max-width: 1440px;
   width: 100%;
-  max-height: 30px;
+  max-height: 110px;
   padding: 80px 220px 0px;
+  box-sizing: border-box;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
@@ -315,14 +318,13 @@ input, textarea, select {
 }
 
 .bestsellers {
+  max-width: 1440px;
   width: 100%;
   min-height: 1270px;
-  box-sizing: border-box;
   padding: 50px 220px 80px;
+  box-sizing: border-box;
+  margin: 0 auto;
 
-  
-  
-  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
