@@ -351,6 +351,7 @@ input, textarea, select {
 .candyIMG {
   width: 280px;
   height: 280px; 
+  box-sizing: border-box;
   
   border-radius: 10px;
 }
@@ -375,10 +376,10 @@ input, textarea, select {
   align-items: center;
   box-sizing: border-box;
   padding: 0px 15px;
-  margin: 20px auto;
+  margin: 0px auto 30px;
   justify-content: space-between;
 
-  background-color: #999999;
+  background-color: #f4dbdb;
 }
 
 .price {
