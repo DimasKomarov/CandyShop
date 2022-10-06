@@ -56,7 +56,6 @@ input, textarea, select {
 
 .headerblock {
   width: 100%;
-  min-height: 150px;
 
   overflow: hidden;
 
@@ -65,11 +64,12 @@ input, textarea, select {
 
 .header {
   position: relative;
-  max-width: 1000px;
-  min-height: 50px;
+  max-width: 1020px;
+  width: 100%;
+  box-sizing: border-box;
   
   margin: 50px auto;
-  padding: 0px 40px;
+  padding: 0px 10px;
 
   display: flex;
   justify-content: space-between;
@@ -116,11 +116,10 @@ input, textarea, select {
 
 .catalogANDsearchblock { 
   max-width: 384px;
+  width: 100%;
  
   display: flex;
-  /* align-items: left; */
   justify-content: space-between;
-  gap: 50px;
 
   background-color: #37aa96;
 }
@@ -214,7 +213,6 @@ input, textarea, select {
 
 .header2 {
   width: 100%;
-  min-height: 400px;
   background: linear-gradient(0deg, rgba(221, 3, 60, 0.75), rgba(221, 3, 60, 0.75)),
     url("../images/candy.png");
   background-repeat: no-repeat;
@@ -227,18 +225,18 @@ input, textarea, select {
 }
 
 .candyAdvertising {
-  max-width: 1000px;
-  min-height: 240px;
+  max-width: 1020px;
+  box-sizing: border-box;
 
   margin: 80px auto;
-  padding: 0px 40px;
+  padding: 0px 10px;
 
   display: flex;
   flex-direction: column;
   align-items: left;
   gap: 50px;
 
-  /* background-color: #000000; */
+  background-color: #000000;
 }
 
 .candyAdvert1 {
@@ -288,16 +286,14 @@ input, textarea, select {
 
 .shopping-area {
   width: 100%;
-  min-height: 1510px;
 
   background-color: #ee8080;
 }
 
 .bestseller-title-block {
-  max-width: 1440px;
+  max-width: 1020px;
   width: 100%;
-  max-height: 110px;
-  padding: 80px 220px 0px;
+  padding: 80px 10px 0px;
   box-sizing: border-box;
   margin: 0 auto;
 
@@ -318,10 +314,9 @@ input, textarea, select {
 }
 
 .bestsellers {
-  max-width: 1440px;
+  max-width: 1020px;
   width: 100%;
-  min-height: 1270px;
-  padding: 50px 220px 80px;
+  padding: 50px 10px 80px;
   box-sizing: border-box;
   margin: 0 auto;
 
@@ -329,8 +324,6 @@ input, textarea, select {
   justify-content: center;
   flex-wrap: wrap;
   gap: 80px;
-
-
 
   background-color: #491616;
 }
@@ -359,11 +352,11 @@ input, textarea, select {
   width: 280px;
   height: 280px; 
   
-  /* shadow */
   border-radius: 10px;
 }
 
 .candyTEXT {
+  box-sizing: border-box;
   padding-left: 15px;
 
   background-color: rgb(82, 238, 186);
@@ -380,15 +373,15 @@ input, textarea, select {
 .priceANDbuy {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  padding: 0px 15px;
   margin: 20px auto;
+  justify-content: space-between;
 
-  gap: 59px;
   background-color: #999999;
 }
 
 .price {
-
-  padding-left: 15px;
   color: rgba(0,0,0,1);
   font-family: Nunito;
   font-weight: Bold;
@@ -434,18 +427,18 @@ input, textarea, select {
 
 .footer {
   width: 100%;
-  min-height: 180px;
   overflow: hidden;
 
   background-color: #DD033C;
 }
 
 .linksANDicons {
-  max-width: 1000px;
+  max-width: 1020px;
   min-height: 80px;
+  box-sizing: border-box;
  
   margin: 50px auto;
-  padding: 0px 40px;
+  padding: 0px 10px;
   
   display: flex;
   align-items: center;
@@ -542,28 +535,39 @@ input, textarea, select {
 
 
 /* МЕДИА ЗАПРОСЫ */
-@media only screen and (max-width: 1439px) {
-  .bestseller-title-block {
-    padding: 80px 0px 0px;
-    justify-content: center;
-  }
+@media only screen and (max-width: 1100px) {
   .bestsellers {
     gap: 70px;
-    padding: 50px 69px 80px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .bestsellers {
-    padding: 50px 48px 80px;
+
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    padding: 0px 40px;
+  }
+  .candyAdvertising {
+    padding: 0px 40px;
+  }
+  .bestseller-title-block {
+    justify-content: center;
+  }
+  .linksANDicons {
+    padding: 0px 40px;
   }
 }
+
+
+
 
 @media only screen and (max-width: 727px) {
   .bestsellers {
     gap: 25px;
   }
 }
+
+
 
 
 
@@ -584,6 +588,11 @@ input, textarea, select {
   }
 }
 
+
+
+
+
+
 @media only screen and (max-width: 560px) {
   .linksANDicons {
     flex-direction: column;
@@ -593,17 +602,25 @@ input, textarea, select {
 
 
 
-
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
   .header {
     padding: 0px 25px;
   }
+  .candyAdvertising {
+    padding: 0px 25px;
+  }
+  .linksANDicons {
+    padding: 0px 25px;
+  }
+}
+
+
+
+@media only screen and (max-width: 375px) {
   .search {
     width: 100%;
   }
   .bestsellers {
     gap: 25px;
-    padding: 50px 48px 80px;
   }
 }
