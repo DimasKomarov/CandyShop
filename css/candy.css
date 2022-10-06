@@ -358,7 +358,7 @@ input, textarea, select {
 
 .candyTEXT {
   box-sizing: border-box;
-  padding-left: 15px;
+  padding: 0px 15px;
 
   background-color: rgb(82, 238, 186);
 }
